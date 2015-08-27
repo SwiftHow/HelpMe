@@ -14,6 +14,9 @@
 		B00CCD3C1B8E1457004CEA26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00CCD3B1B8E1457004CEA26 /* Images.xcassets */; };
 		B00CCD3F1B8E1457004CEA26 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00CCD3D1B8E1457004CEA26 /* LaunchScreen.xib */; };
 		B00CCD4B1B8E1457004CEA26 /* HelpMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00CCD4A1B8E1457004CEA26 /* HelpMeTests.swift */; };
+		B095B08F1B8EFBBE00C3CE64 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095B08E1B8EFBBE00C3CE64 /* Theme.swift */; };
+		B095B0931B8EFD1F00C3CE64 /* SwiftColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095B0921B8EFD1F00C3CE64 /* SwiftColors.swift */; };
+		B095B0951B8EFE2100C3CE64 /* DataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095B0941B8EFE2100C3CE64 /* DataStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		B00CCD441B8E1457004CEA26 /* HelpMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelpMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00CCD491B8E1457004CEA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B00CCD4A1B8E1457004CEA26 /* HelpMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpMeTests.swift; sourceTree = "<group>"; };
+		B095B08E1B8EFBBE00C3CE64 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B095B0921B8EFD1F00C3CE64 /* SwiftColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftColors.swift; sourceTree = "<group>"; };
+		B095B0941B8EFE2100C3CE64 /* DataStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStruct.swift; sourceTree = "<group>"; };
 		B79956F0AA7FE025D1E88B7E /* Pods-HelpMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelpMe/Pods-HelpMe.release.xcconfig"; sourceTree = "<group>"; };
 		E6FA7BCC55C794F04AA84821 /* Pods-HelpMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelpMe/Pods-HelpMe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,11 +99,13 @@
 		B00CCD311B8E1457004CEA26 /* HelpMe */ = {
 			isa = PBXGroup;
 			children = (
+				B095B08E1B8EFBBE00C3CE64 /* Theme.swift */,
+				B095B0941B8EFE2100C3CE64 /* DataStruct.swift */,
 				B00CCD341B8E1457004CEA26 /* AppDelegate.swift */,
 				B00CCD361B8E1457004CEA26 /* ViewController.swift */,
 				B00CCD381B8E1457004CEA26 /* Main.storyboard */,
 				B00CCD3B1B8E1457004CEA26 /* Images.xcassets */,
-				B00CCD3D1B8E1457004CEA26 /* LaunchScreen.xib */,
+				B095B0911B8EFD1F00C3CE64 /* Extension */,
 				B00CCD321B8E1457004CEA26 /* Supporting Files */,
 			);
 			path = HelpMe;
@@ -106,6 +114,7 @@
 		B00CCD321B8E1457004CEA26 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B00CCD3D1B8E1457004CEA26 /* LaunchScreen.xib */,
 				B00CCD331B8E1457004CEA26 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -126,6 +135,14 @@
 				B00CCD491B8E1457004CEA26 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B095B0911B8EFD1F00C3CE64 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B095B0921B8EFD1F00C3CE64 /* SwiftColors.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		D246BE22A2345D2A91267A41 /* Frameworks */ = {
@@ -287,8 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B095B0951B8EFE2100C3CE64 /* DataStruct.swift in Sources */,
+				B095B08F1B8EFBBE00C3CE64 /* Theme.swift in Sources */,
 				B00CCD371B8E1457004CEA26 /* ViewController.swift in Sources */,
 				B00CCD351B8E1457004CEA26 /* AppDelegate.swift in Sources */,
+				B095B0931B8EFD1F00C3CE64 /* SwiftColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HelpMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -428,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HelpMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
